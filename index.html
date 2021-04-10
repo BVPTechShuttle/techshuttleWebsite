@@ -5,29 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/24a476b79d.js" crossorigin="anonymous"></script>
     <style>
-      body {
+        body {
           font-family: 'Poppins';font-size: 22px;
-      }
+        }
+        .card p{
+            font-family:"Poppins";
+            display: inline-block;
+        }
+        .card {
+            width: 200px;
+            height: 325px;
+            margin:auto;
+            text-align: center;
+        }
+        .title {
+            color:black;
+            font-size: 15px;
+        }
+        .card h2{
+            font-family: "Poppins",sans-serif;
+            color:black;
+            font-size: 18px;
+        }
+        .card a {
+            font-size: 25px;
+            color: rgb(255, 60, 92);
+            padding:15px;
+        }
+        .card img{
+            border-radius: 50%;
+        }
+        div{
+            margin: 0px;
+        }
       </style>
     <link rel = "icon" href = "https://github.com/BVPTechShuttle/techshuttleWebsite/blob/main/img/favicon.png?raw=true">
     <meta name="keywords" hackclub , techshuttle>
     <title>Techshuttle, Hack Club BVCOE</title>
 </head>
 <body>
-
+    <a id = "home"></a>
     <header class="text-gray-700 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a href="https://hackclub.com/"><img src="https://github.com/BVPTechShuttle/techshuttleWebsite/blob/main/img/_TECH%20SHUTTLE__.png?raw=true" style="position: absolute; top: 0; left: 0; width:130px;" alt="Hack Club"/></a>
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            
             <span class="ml-20 mt-2 text-2xl"><b>TechShuttle|<b class="mt-2 text-x1 text-red-600">BVCOE</b></b></span>
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900 " href="#mission" >Mission</a>
             <a class="mr-5 hover:text-gray-900" href="#vision">Vision</a>
+            <a class="mr-5 hover:text-gray-900 " href="#mission" >Mission</a>
             <a class="mr-5 hover:text-gray-900" href="#team">Team</a>
             <a class="mr-5 hover:text-gray-900" href = "#events">Events</a>
+            <a class="mr-5 hover:text-gray-900" href = "#contact">Contact Us</a>
           </nav>
           
             <a href="https://docs.google.com/forms/d/1cSSZ01EDk3VaGIAVk8Q7zaSR6d-LAqiWopvDqLuoY84/edit?ts=5f9be865" target="_blank">
@@ -68,9 +99,20 @@
             <h1 class="title-font sm:text-2xl text-3xl mb-4 font-medium text-gray-900"> <b>MEET <b class="mt-1 text-x1 text-red-600">THE TEAM</b></b>
             </h1>
         </div>
+        <div class="card">
+            <img src="C:\Users\Kanishka\Desktop\WhatsApp Image 2021-04-10 at 19.52.44.jpeg" style = "width:200px; height:200px; padding-bottom:10px;">
+            <h2>Kanishka Aggarwal</h2>
+            <p class="title">
+                Lead and Co-founder
+            </p>
+                <a href = "https://github.com/kanishkaa24"><i class="fab fa-github"></i></a>
+                <a href = "https://www.linkedin.com/in/kanishka-aggarwal-255a51169/"><i class="fab fa-linkedin"></i></a>
+                <a href = "mailto:kanishkaaggarwal45@gmail.com"><i class="fas fa-envelope"></i></a>
+            <p></p>
+          </div>
         </div>
       </section>
-      <section class="text-gray-700 body-font">
+      <section class="text-gray-700 body-font" style="margin: 0px;">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
           <a id="events"></a>
@@ -158,6 +200,11 @@
           
         </div>
       </section>
+      <a href = "#home" style="float: right; vertical-align: center;">
+        <button class="inline-flex text-white bg-red-500 border-0 py-2 px-4 focus:outline-none hover:bg-red-650 rounded text-base mt-4 md:mt-0">Back to Top
+    </button>
+  </a>
+      <a id="contact"></a>
       <footer class="text-gray-700 body-font">
         <div class="bg-gray-200">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
