@@ -102,6 +102,79 @@
     .r_color {
       color: rgba(229, 62, 62);
     }
+
+    @keyframes stroke-offset{
+        100% {stroke-dashoffset: -100%;}
+      }
+
+      
+
+      .dwoc-card {
+        background-color: transparent;
+        width: 450px;
+        height: 450px;
+        perspective: 1000px; 
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        border-radius:30px;
+      }
+
+      .dwoc-card-struct {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        border-radius:30px;
+      }
+
+      .dwoc-card:hover .dwoc-card-struct {
+        transform: rotateY(180deg);
+      }
+      
+      .dwoc-card-front, .dwoc-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius:30px;
+      }
+
+      
+      .dwoc-card-back {
+        background-image: linear-gradient(#faa648, #fd6141);
+        color: #faa648;
+        transform: rotateY(180deg);
+      }
+
+      .dwoc{
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+
+      .dwoc-card-back h1{
+        font-family: "Poppins";
+        vertical-align: middle;
+        font-size: 25px;
+        text-align:center;
+        color:black;
+        font-weight: lighter;
+        margin-top:150px;
+        padding: 10px;
+        margin-bottom: 0px;
+      }
+
+      .text h1{
+        color: black;
+        font-family:"Poppins";
+        margin-top: 10px;
+        font-size: 30px;
+      }
+
+
   </style>
   <link rel="icon" href="https://github.com/BVPTechShuttle/techshuttleWebsite/blob/main/img/favicon.png?raw=true">
   <meta name="keywords" hackclub , techshuttle>
@@ -343,6 +416,23 @@
         <!--h2 class="text-xs text-red-500 tracking-widest font-medium title-font mb-1">events</h2-->
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="font-size:35px;"><b>UPCOMING
             <b class="mt-1 text-x1 text-red-600">EVENTS</b></b></h1>
+
+          <div class="dwoc-card">
+    <div class="dwoc-card-struct">
+      <div class="dwoc-card-front">
+        <img class = "dwoc" src="https://github.com/BVPTechShuttle/techshuttleWebsite/blob/main/img/poster_cppsessions.png?raw=true" >
+        </div>
+      <div class="dwoc-card-back">
+        <h1>A series of live sessions on C++ programming language with hands on expereince. </h1>
+      </div>
+    </div>
+  </div>
+  <div class="text" >
+        <h1><b>C++ Sessions</b></h1>
+        </div>
+
+
+
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
           style="font-size:35px;margin-top:40px;"><b>PAST <b class="mt-1 text-x1 text-red-600">EVENTS</b></b></h1>
         <h1 class="sm:text-1xl text-1xl text-red-500 font-medium title-font mb-1" style="margin: 10px;"><b>OMEGA
