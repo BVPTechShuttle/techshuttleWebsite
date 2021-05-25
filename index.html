@@ -212,6 +212,10 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
+@media screen and (max-width: 600px) {
+  .upcomingevent {float: none;}
+}
+
   </style>
   <link rel="icon" href="https://github.com/BVPTechShuttle/techshuttleWebsite/blob/main/img/favicon.png?raw=true">
   <meta name="keywords" hackclub , techshuttle>
@@ -462,20 +466,44 @@
         <!--h2 class="text-xs text-red-500 tracking-widest font-medium title-font mb-1">events</h2-->
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="font-size:35px;"><b>UPCOMING
             <b class="mt-1 text-x1 text-red-600">EVENTS</b></b></h1>
-
-          <div class="dwoc-card">
-    <div class="dwoc-card-struct">
-      <div class="dwoc-card-front">
-        <img class = "dwoc" src="https://github.com/BVPTechShuttle/techshuttleWebsite/blob/main/img/poster_cppsessions.png?raw=true" >
+        <!-- <ul style="display: inline-flex;"> -->
+          <ul>
+          <li class="upcomingevent">
+        <div class="dwoc-card">
+          <div class="dwoc-card-struct">
+            <div class="dwoc-card-front">
+              <img class = "dwoc" src="https://github.com/BVPTechShuttle/techshuttleWebsite/blob/main/img/poster_cppsessions.png?raw=true" >
+            </div>
+            <div class="dwoc-card-back">
+            <h1>A series of live sessions on C++ programming language with hands on expereince. <br><p>Starts from May 15, 2021 </p><br>
+            <a href="https://forms.gle/FtddfSsDmhti9V8a6"><button>Register Here</button></a></h1>
+          </div>
         </div>
-      <div class="dwoc-card-back">
-        <h1>A series of live sessions on C++ programming language with hands on expereince. </h1>
       </div>
-    </div>
-  </div>
-  <div class="text" >
+      <div class="text" >
         <h1><b>C++ Sessions</b></h1>
+      </div>
+    </li>
+    <!-- <li class = "upcomingevent">
+      <div class="dwoc-card">
+          <div class="dwoc-card-struct">
+            <div class="dwoc-card-front">
+              <img class = "dwoc" src="img/inception.jpeg" >
+              </div>
+            <div class="dwoc-card-back" style="background-image: url(img/Inception_back.png);      color: white;">
+              <h1 style="color: white;">A mini technical fest with an opportunity to learn abundant and earn amazing prizes. </h1><br><p>May 27, 2021 - June 6, 2021</p><br>
+              <a href="https://bvptechshuttle.github.io/Inception/#home"><button>KNOW MORE</button>
+              </a>
+            </div>
+          </div>
         </div>
+        <div class="text" >
+          <h1><b>INCEPTION</b></h1>
+        </div>
+      </li> -->
+    </ul>
+
+        
         <a id="pastevents"></a>
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
           style="font-size:35px;margin-top:40px;"><b>PAST <b class="mt-1 text-x1 text-red-600">EVENTS</b></b></h1>
